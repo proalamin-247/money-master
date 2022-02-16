@@ -29,7 +29,7 @@
                           <label class="col-form-label">Income</label>
                         </div>
                         <div class="col-auto">
-                          <input type="text" class="form-control">
+                          <input id="income-input" type="text" class="form-control">
                         </div>
                     </div>
                     <div class="mt-4">
@@ -39,7 +39,7 @@
                               <label class="col-form-label">Food:</label>
                             </div>
                             <div class="col-auto">
-                              <input type="text" class="form-control">
+                              <input id="food-cost" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row g-3 align-items-center my-2">
@@ -47,7 +47,7 @@
                               <label class="col-form-label">Rent:</label>
                             </div>
                             <div class="col-auto">
-                              <input type="text" class="form-control">
+                              <input id="rent-cost" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row g-3 align-items-center my-2">
@@ -55,16 +55,16 @@
                               <label class="col-form-label">Cloth:</label>
                             </div>
                             <div class="col-auto">
-                              <input type="text" class="form-control">
+                              <input id="cloth-cost" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="text-center mt-4">
-                            <button type="button" class="btn btn-primary btn-lg">Calculate</button>
+                            <button type="button" id="calculate-btn" class="btn btn-primary btn-lg">Calculate</button>
                         </div>
                     </div>
                     <div class="mt-4 text-center">
-                        <h3>Total Expenses: 00</h3>
-                        <h3>Balance: 00</h3>
+                        <h3>Total Expenses: <span id="total-expenses">00</span></h3>
+                        <h3>Balance: <span id="main-balance">00</span></h3>
                     </div>
                     <div class="row align-items-center mt-5">
                         <div class="col-3">
