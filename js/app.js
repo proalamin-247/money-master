@@ -44,7 +44,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         balanceAmountField.innerText = newBalanceRemain;
     }
     else if (totalExpenses > myIncomeAmount) {
-        alert('much more expenses')
+        alert('Total Expeses much higher than income')
     }
     else {
         alert("Write possitive value! & number type (English type)*");
@@ -56,6 +56,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 document.getElementById('saving-btn').addEventListener('click', function () {
 
     const savingRate = inputAmount('saving-rate');
+
     const myIncomeAmount = inputAmount('income-input');
 
     const savingAmountField = document.getElementById('saving-amount');
@@ -73,12 +74,12 @@ document.getElementById('saving-btn').addEventListener('click', function () {
     const balanceAmountText = balanceAmountField.innerText;
     const balanceAmountRemain = parseFloat(balanceAmountText);
 
-    if (balanceAmountField > savingAmountField ) {
+    if (balanceAmountRemain > newSavingAmount) {
         const newBalanceRemain = balanceAmountRemain - newSavingAmount;
         remainingBalanceField.innerText = newBalanceRemain;
     }
     else{
-        alert("not ENNNNNNNN");
+        alert("NOt Have Enough Balance Please much low saving");
         savingAmountField.innerText = '00';
     }
     
