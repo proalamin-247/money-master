@@ -85,6 +85,7 @@ document.getElementById('saving-btn').addEventListener('click', function () {
     else{
         alert("Blank saving rate OR not Have Enough Balance Please much low saving");
         savingAmountField.innerText = '00';
+        remainingBalanceField.innerText = '00';
     }
     
 })
