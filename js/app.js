@@ -87,7 +87,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
 // save 
 document.getElementById('saving-btn').addEventListener('click', function(){
     
-    const savingAmountParsent = inputAmount('saving-amount-parsent');
+    const savingAmountParsent = inputAmount('saving-rate');
 
     const myIncomeAmount = inputAmount('income-input');
 
@@ -95,7 +95,7 @@ document.getElementById('saving-btn').addEventListener('click', function(){
     const savingAmountText = savingAmountField.innerText;
     const savingAmount = parseFloat(savingAmountText);
 
-    const newSavingAmount = myIncomeAmount / savingAmountParsent;
+    const newSavingAmount = myIncomeAmount * (savingAmountParsent/100); 
     savingAmountField.innerText = newSavingAmount;
 
     const remainingBalanceField = document.getElementById('remaining-balance');

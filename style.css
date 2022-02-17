@@ -1,3 +1,12 @@
 main{
     font-size: 135%;
 }
+
+/* calculation-area style */
+.calculation-area{
+    background-color: rgba(213, 232, 250, 0.651);;
+    border-radius: 30px;
+}
+.ok{
+    margin: auto;
+}
