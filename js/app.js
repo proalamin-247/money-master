@@ -75,7 +75,7 @@ document.getElementById('saving-btn').addEventListener('click', function () {
 
     if (balanceAmountRemain > newSavingAmount) {
         if (savingRate < 0) {
-            alert("Ops! your saving input value wrong");
+            alert("Ops! your saving input value negative type positive value");
             savingAmountField.innerText = '00';
         } else {
             const newBalanceRemain = balanceAmountRemain - newSavingAmount;
@@ -83,7 +83,7 @@ document.getElementById('saving-btn').addEventListener('click', function () {
         }
     }
     else{
-        alert("NOt Have Enough Balance Please much low saving");
+        alert("Blank saving rate OR not Have Enough Balance Please much low saving");
         savingAmountField.innerText = '00';
     }
     
