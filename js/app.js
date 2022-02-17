@@ -56,7 +56,6 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 document.getElementById('saving-btn').addEventListener('click', function () {
 
     const savingRate = inputAmount('saving-rate');
-
     const myIncomeAmount = inputAmount('income-input');
 
     const savingAmountField = document.getElementById('saving-amount');
@@ -75,8 +74,13 @@ document.getElementById('saving-btn').addEventListener('click', function () {
     const balanceAmountRemain = parseFloat(balanceAmountText);
 
     if (balanceAmountRemain > newSavingAmount) {
-        const newBalanceRemain = balanceAmountRemain - newSavingAmount;
-        remainingBalanceField.innerText = newBalanceRemain;
+        if (savingRate < 0) {
+            alert("Ops! your saving input value wrong");
+            savingAmountField.innerText = '00';
+        } else {
+            const newBalanceRemain = balanceAmountRemain - newSavingAmount;
+            remainingBalanceField.innerText = newBalanceRemain;
+        }
     }
     else{
         alert("NOt Have Enough Balance Please much low saving");
