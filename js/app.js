@@ -77,6 +77,7 @@ document.getElementById('saving-btn').addEventListener('click', function () {
         if (savingRate < 0) {
             alert("Ops! your saving input value negative type positive value");
             savingAmountField.innerText = '00';
+            remainingBalanceField.innerText = '00';
         } else {
             const newBalanceRemain = balanceAmountRemain - newSavingAmount;
             remainingBalanceField.innerText = newBalanceRemain;
